@@ -13,7 +13,7 @@ resource "azurerm_resource_group" "resource_group" {
 }
 
 module "azure_function" {
-  source                    = "aminespinoza/azurefunctions/azurerm"
+  source                    = "jhonu/azurefunctions/azurerm"
   rg_name                   = azurerm_resource_group.resource_group.name
   rg_location               = azurerm_resource_group.resource_group.location
   storage_account_name      = "functionsappteststorage"
